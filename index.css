@@ -1,0 +1,138 @@
+.body {
+  width: 1000px;
+  height: 1000px;
+}
+
+.rover {
+  display: flex;
+  flex-direction: column;
+  padding-top: 97px;
+  position: relative;
+}
+
+.rover__tower {
+  align-self: flex-start;
+  margin-left: 310px;
+  position: relative;
+}
+.rover__flag {
+  position: absolute;
+  left: -3px;
+  top: 5;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 65px solid red;
+  border-bottom: 20px solid transparent;
+}
+.rover__mast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.rover__stick {
+  height: 320px;
+  width: 5px;
+  background-color: #999999;
+}
+
+.rover__black-rectangle {
+  width: 54px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 5px 5px 0 0;
+}
+
+.rover__gray-rectangle {
+  width: 54px;
+  height: 32px;
+  background-color: #666666;
+}
+
+.rover__black-trapezoid {
+  border-bottom: 56px solid #000000;
+  border-left: 22px solid transparent;
+  height: 0;
+  width: 75px;
+  margin-right: 32px;
+}
+
+.rover__corps {
+  align-self: flex-start;
+  margin-left: 238px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rover__gray-corps {
+  width: 530px;
+  height: 49px;
+  background-color: #d8d8d8;
+  border-top-left-radius: 55px 50px;
+  border-top-right-radius: 210px 50px;
+}
+.rover__red-corps {
+  width: 538px;
+  height: 14px;
+  border-radius: 8px;
+  background-color: #ff0000;
+}
+.rover__orange-corps {
+  width: 520px;
+  height: 131px;
+  border-radius: 0 0 24px 24px;
+  background-color: #f45a3b;
+}
+
+.rover__black-corps {
+  width: 490px;
+  height: 110px;
+  background: #222222;
+  position: relative;
+}
+
+.rover__black-corps:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: none;
+  border-bottom: 10px solid #222222;
+  border-left: 10px solid #ffffff;
+  border-right: 10px solid #ffffff;
+  width: 470px;
+  height: 0;
+}
+
+.rover__black-corps:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  bottom: none;
+
+  border-top: 70px solid #222222;
+  border-left: 70px solid #ffffff;
+  border-right: 70px solid #ffffff;
+  width: 350px;
+  height: 0;
+}
+.rover__wheels {
+  width: 480px;
+  position: absolute;
+  left: 52%;
+  bottom: 0;
+  transform: translate(-50%, 46%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rover__wheel {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #000000;
+}
